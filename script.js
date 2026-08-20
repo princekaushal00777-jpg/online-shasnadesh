@@ -123,25 +123,26 @@ function displayGOs(data) {
                 वर्ष : ${go.year || "उपलब्ध नहीं"}
             </div>
 
-            <div class="buttons">
+           <div class="buttons">
 
-               <a
+    <a
         href="${go.downloadUrl}"
         target="_blank"
-        class="view-btn">
+        class="view-btn"
+    >
         👁 View
-        </a>
+    </a>
 
-                <a
-                    href="${go.downloadUrl}"
-                    target="_blank"
-                    class="download-btn"
-                    download
-                >
-                    ⬇ Download
-                </a>
+    <a
+        href="${go.downloadUrl}"
+        target="_blank"
+        class="download-btn"
+        download
+    >
+        ⬇ Download
+    </a>
 
-            </div>
+</div>
         `;
 
         goList.appendChild(card);
