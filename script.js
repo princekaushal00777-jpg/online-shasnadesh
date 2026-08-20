@@ -3,7 +3,7 @@
 // ============================================
 
 const GITHUB_USERNAME = "princekaushal00777-jpg";
-const GITHUB_REPOSITORY = "online-shasanadesh";
+const GITHUB_REPOSITORY = "online-shasnadesh";
 const GO_FOLDER = "GO";
 
 // ============================================
