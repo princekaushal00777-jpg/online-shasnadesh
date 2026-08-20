@@ -259,3 +259,15 @@ function filterGOs() {
 // ============================================
 
 loadGOs();
+return {
+    name: removeExtension(file.name),
+    fileName: file.name,
+
+    // PDF को browser में खोलने के लिए
+    viewUrl: `https://docs.google.com/gview?embedded=1&url=${encodeURIComponent(file.download_url)}`,
+
+    // Download के लिए
+    downloadUrl: file.download_url,
+
+    year: getYear(file.name)
+};
