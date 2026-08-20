@@ -126,7 +126,7 @@ function displayGOs(data) {
             <div class="buttons">
 
                <a
-    href="${go.downloadUrl}"
+    href="${go.url}"
     target="_blank"
     class="view-btn"
 >
