@@ -123,18 +123,27 @@ function displayGOs(data) {
                 वर्ष : ${go.year || "उपलब्ध नहीं"}
             </div>
 
-          return {
-    name: removeExtension(file.name),
-    fileName: file.name,
+            <div class="buttons">
 
-    // PDF को browser में खोलने के लिए
-    viewUrl: `https://docs.google.com/gview?embedded=1&url=${encodeURIComponent(file.download_url)}`,
+                <a
+                    href="${go.url}"
+                    target="_blank"
+                    class="view-btn"
+                >
+                    👁 View
+                </a>
 
-    // Download के लिए
-    downloadUrl: file.download_url,
+                <a
+                    href="${go.downloadUrl}"
+                    target="_blank"
+                    class="download-btn"
+                    download
+                >
+                    ⬇ Download
+                </a>
 
-    year: getYear(file.name)
-}       `;
+            </div>
+        `;
 
         goList.appendChild(card);
 
@@ -250,15 +259,3 @@ function filterGOs() {
 // ============================================
 
 loadGOs();
-return {
-    name: removeExtension(file.name),
-    fileName: file.name,
-
-    // PDF को browser में खोलने के लिए
-    viewUrl: `https://docs.google.com/gview?embedded=1&url=${encodeURIComponent(file.download_url)}`,
-
-    // Download के लिए
-    downloadUrl: file.download_url,
-
-    year: getYear(file.name)
-};
