@@ -123,27 +123,18 @@ function displayGOs(data) {
                 वर्ष : ${go.year || "उपलब्ध नहीं"}
             </div>
 
-           <div class="buttons">
+          return {
+    name: removeExtension(file.name),
+    fileName: file.name,
 
-    <a
-        href="${go.downloadUrl}"
-        target="_blank"
-        class="view-btn"
-    >
-        👁 View
-    </a>
+    // PDF को browser में खोलने के लिए
+    viewUrl: `https://docs.google.com/gview?embedded=1&url=${encodeURIComponent(file.download_url)}`,
 
-    <a
-        href="${go.downloadUrl}"
-        target="_blank"
-        class="download-btn"
-        download
-    >
-        ⬇ Download
-    </a>
+    // Download के लिए
+    downloadUrl: file.download_url,
 
-</div>
-        `;
+    year: getYear(file.name)
+}       `;
 
         goList.appendChild(card);
 
