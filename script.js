@@ -2,8 +2,8 @@
 // GITHUB SETTINGS
 // ============================================
 
-const GITHUB_USERNAME = "rauthan91-blip";
-const GITHUB_REPOSITORY = "mygo";
+const GITHUB_USERNAME = "princekaushal00777-jpg";
+const GITHUB_REPOSITORY = "online-shasanadesh";
 const GO_FOLDER = "GO";
 
 // ============================================
