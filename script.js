@@ -125,13 +125,12 @@ function displayGOs(data) {
 
             <div class="buttons">
 
-                <a
-                    href="${go.url}"
-                    target="_blank"
-                    class="view-btn"
-                >
-                    👁 View
-                </a>
+               <a
+        href="${go.downloadUrl}"
+        target="_blank"
+        class="view-btn">
+        👁 View
+        </a>
 
                 <a
                     href="${go.downloadUrl}"
